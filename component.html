@@ -1,0 +1,20 @@
+<h2>The Parts</h2>
+<ul class="parts">
+  <li *ngFor="let part of parts"
+    [class.selected]="part === selectedPart"
+    (click)="onSelect(part)">
+    <span class="badge">{{part.id}}</span> {{part.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedPart">
+
+  <h2>{{selectedPart.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedPart.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedPart.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>
