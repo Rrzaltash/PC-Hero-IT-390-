@@ -1,0 +1,72 @@
+ <!DOCTYPE HTML>
+  
+<html>
+<head>
+<title> Hardware Reccomendations </title>
+
+<link rel="stylesheet" href="style.css" type ="text/css" />
+</head>
+
+
+<body>
+<header>
+<h1> Hardware Search Page </h1>
+<h2> Find the perfect hardware for you! </h2>
+
+<br>
+
+</header>
+<h3>September 11th, 2019 </h3>
+
+
+
+<div class ="sidebar">
+<ul>
+	<li> <a href="home.html"> Home </a> </li>
+	<li> <a href="searchResults.html"> Search Results </a> </li>
+	<li> <a href="aboutUs.html"> About Us </a> </li>
+</ul>
+
+</div>
+
+
+
+
+<p>
+<div class ="content">
+<button id="hlpBtn">Need Help? Click here</button>
+<script>
+document.getElementById("hlpBtn").addEventListener("click", helpFunction);
+
+function helpFunction() {
+  alert ("Please enter the name of the parts you desire into the first spot! "<br>"If you are having problems finding the serial numbers, please leave it blank"<br>"If you are not sure if the item is used, please leave it blank");
+}
+</script>
+<form action="searchResults.html" method="post">
+		<h2>Search Criteria for the new parts! </h2>
+			<br>Please enter the name of your part:  <input type="text" name="partName" /> </br> <br />
+			<br> What is the serial number on the part (optional): <input type="text" name="serialNum" /> </br> <br />
+			Is this a used item?: <input type="radio" name="localYes" value="d"> Yes </br> <br />
+			<br /><br />
+			
+
+		
+			
+			<input type="submit" />
+		</form>
+		</h3>
+
+</div>
+
+
+<footer>
+<p>
+Copywrite notice: This website and it's uses are created by Rahi Zaltash in accordance with George Mason University. It and it's likeness are properties of Rahi, George Mason University, and it's resources.
+<br>
+Privacy Notice: Usage of this site means to an agreement to use your information in order to better serve you. Information used on this website may be shared with third party companies. 
+</p>
+</footer>
+
+</body>
+
+</html> 
